@@ -1,0 +1,27 @@
+var array = [1, 2, 3, 4, 5, 6, "tamil"]
+
+let arr = array.forEach(val => console.log(val))
+
+// forEach is an alternative condition for (for loop), it will execute over the array for each element in the sequence
+
+var NexArray = [1,2,3, "tamil", 'thangam']
+
+let arrr = NexArray.map(val => console.log(val))
+
+let ar = NexArray.map(val => (val))
+console.log("mapping array :", ar)
+
+
+// map is an looping condition for an array but it finally create new array for the transformed element
+
+var newArray = [1, 33, 2, 5, 64, 55, 9]
+
+var newArr = newArray.filter(val => val%2==0 )
+console.log(newArr)
+
+//filter method used to filter the array element fexcibly for whatever the condition we want
+
+var lastArr = [2, 3, 5, 8, 66, 44, 22]
+
+var last = lastArr.reduce((total,element) => (total+element))
+console.log("total :",last)

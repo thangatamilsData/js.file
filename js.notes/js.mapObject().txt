@@ -1,0 +1,9 @@
+let one = new Map()
+one.set('a','tamil')
+one.set('b',2)
+one.delete('a')
+one.set('a',"thangatamil")
+for([k, v] of one){
+    console.log(v)
+}
+console.log(one)

@@ -1,0 +1,22 @@
+// used to retrive and change private variable in the class
+class Example {
+  constructor() {
+    this._value = 0; // Private attribute indicated by _
+  }
+
+  // Getter method
+  get value() {
+    return this._value;
+  }
+
+  // Setter method
+  set value(newValue) {
+    this._value = newValue;
+  }
+}
+
+// Usage
+const obj = new Example();
+console.log(obj.value); // Access value using getter
+obj.value = 10; // Update value using setter
+console.log(obj.value); // Access updated value using getter

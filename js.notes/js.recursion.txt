@@ -1,0 +1,17 @@
+var a = prompt("Enter the number :")
+
+function recursion(n){
+    if (n==1){
+        return n
+    }
+    else{
+        return (n * recursion(n-1))
+    }
+}
+
+if (a <= 0){
+    console.log("Enter the larger number")
+}
+else{
+    console.log(a+"=", recursion(a))
+}

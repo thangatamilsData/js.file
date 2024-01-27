@@ -1,0 +1,65 @@
+//set the setTimeout correctly and have call all the three promise function as you assigned
+var prom_1 = new Promise( (resolve, reject) => {
+    var condition = false
+    
+    if (condition){
+        setTimeout (() => {resolve("Resolve is settled")},1000)
+    }
+    else{
+        setTimeout (() => {reject("reject is settled")},1000)
+    }
+})
+var prom_2 = new Promise( (resolve, reject) => {
+    var condition = false
+    
+    if (condition){
+        setTimeout (() => {resolve("second Resolve is settled")},2000)
+    }
+    else{
+        setTimeout( () => {reject("second reject is settled")},2000)
+    }
+})
+var prom_3 = new Promise( (resolve, reject) => {
+    var condition = true
+    
+    if (condition){
+        setTimeout (() => {resolve("third Resolve is settled")},3000)
+    }
+    else{
+        setTimeout ( () => {reject("third reject is settled")},3000) 
+    }
+})
+
+async function fix(msg){
+    try{
+        let res = await prom_1
+        console.log(res)
+        console.log(msg)
+    }
+    catch (err){
+        console.log(err)
+        console.log(msg)
+    }
+    try{
+        let res = await prom_2
+        console.log(res)
+        console.log(msg)
+    }
+    catch (err){
+        console.log(err)
+        console.log(msg)
+    }
+    try{
+        let res = await prom_3
+        console.log(res)
+        console.log(msg)
+    }
+    catch (err){
+        console.log(err)
+        console.log(msg)
+        
+    }
+}
+
+
+fix("async && await")

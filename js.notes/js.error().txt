@@ -1,0 +1,28 @@
+while(true){
+    try{
+    var a = Number(prompt("Enter the value :"))
+    var b = Number(prompt("Enter the value :"))
+    
+    if (isNaN(a)){
+        throw 'A is not a number'
+    }
+    else if(isNaN(b)){
+        throw 'B is not a number'
+    }
+    else if (a == ''){
+        throw 'Please enter the number in condition A'
+    }
+    else if (b == ''){
+        throw 'Please enter the number in condition B'
+    }
+    else{
+        console.log(a*b)
+    }
+}
+catch(error){
+    console.log(error)
+}
+finally{
+    console.log('Done')
+}
+}

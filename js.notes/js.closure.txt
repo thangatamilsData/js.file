@@ -1,0 +1,16 @@
+var arr = [1, 2, 3]
+
+function outerscope()
+{
+    let name = "tamil"
+    
+    function innerscope(){
+        console.log(`hi ${arr} `, name)
+    }
+    return innerscope
+}
+
+let out = new outerscope()
+out()
+
+// closure is beneficial concept in js that allow inner scope function access the variable of an outer scope function even after the finish execution in outer scope and it can access the global scope variables also

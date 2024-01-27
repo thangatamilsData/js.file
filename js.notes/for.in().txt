@@ -1,0 +1,12 @@
+let obj = {
+    name : 'tamil',
+    age : 22,
+    profession : "IT"
+}
+
+for (i in obj){
+    console.log(i,obj[i])
+}
+
+// for (in) is used for looping the object 
+// for (of) mostly used to loop the sequence

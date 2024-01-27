@@ -1,0 +1,44 @@
+var prom_1 = new Promise( (resolve, reject) => {
+    var condition = false
+    
+    if (condition){
+        setTimeout (() => {resolve("Resolve is settled")},3000)
+    }
+    else{
+        setTimeout (() => {reject("reject is settled")},2000)
+    }
+})
+var prom_2 = new Promise( (resolve, reject) => {
+    var condition = false
+    
+    if (condition){
+        setTimeout (() => {resolve("second Resolve is settled")},2000)
+    }
+    else{
+        setTimeout( () => {reject("second reject is settled")},3000)
+    }
+})
+var prom_3 = new Promise( (resolve, reject) => {
+    var condition = true
+    
+    if (condition){
+        setTimeout (() => {resolve("third Resolve is settled")},2000)
+    }
+    else{
+        setTimeout ( () => {reject("third reject is settled")},3000) 
+    }
+})
+
+async function fix(msg){
+    try{
+        res = await prom_2
+        console.log(res)
+        setTimeout( () => {console.log(msg)},3000)
+    }
+    catch (err){
+        console.log(err)
+        setTimeout ( () => {console.log(msg)},3000)
+    }
+}
+
+fix("async && await")

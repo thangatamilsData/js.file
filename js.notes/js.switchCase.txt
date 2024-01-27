@@ -1,0 +1,19 @@
+var place = ['bengaluru', 'chennai', 'coimbatore']
+
+var rand = Math.floor(Math.random()*3)
+var random_place = place[rand]
+console.log(random_place)
+
+switch (random_place){
+    case 'chennai':
+        console.log("chennai vicky")
+        break
+    
+    case 'bengaluru':
+        console.log("Bengaluru thangatamil")
+        break
+    
+    case "coimbatore":
+        console.log('covai tamil')
+        
+}

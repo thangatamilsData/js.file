@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="not">Notes</h1>
+    </nav>
+
+    <section class="main">
+      <button class="alldelete">All Delete</button>
+      <div class="container">
+        <h1>Hello</h1>
+        <h4 style="text-decoration: underline; color: rgb(60, 60, 60)">
+          Sub title
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima
+          tempora quaerat temporibus porro, dolores veniam iste debitis corporis
+          voluptatibus! Laudantium quaerat laborum quo debitis repellat autem
+          labore vero voluptates.
+        </p>
+        <button class="btn1" onclick="edited(event)">Edit</button>
+        <button class="btn2" onclick="del(event)">Delete</button>
+        <button id="icon" onclick="fav(this)">
+          <i class="fa-regular fa-heart"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="pop_screen">
+      <div class="pop_up">
+        <input type="text" class="inp1" placeholder="Title" />
+        <input type="text" class="inp2" placeholder="Sub Title" />
+        <textarea class="text" placeholder="Content"></textarea>
+        <button class="btn3">Add</button>
+        <button class="btn4">Cancel</button>
+      </div>
+    </section>
+
+    <button class="add_item">ADD</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>

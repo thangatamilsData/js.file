@@ -1,0 +1,51 @@
+var prom = new Promise((resolve, reject) => {
+    var condition = false
+    
+    if (condition){
+        resolve("hi thangatamil")
+    }
+    else{
+        setTimeout(() => {reject("rejecting")},3000)
+    }
+} )
+
+async function fix(){
+    try{
+        var res = await (prom)
+    console.log(res)
+    }
+    
+    catch(err){
+        console.log(err)
+    }
+}
+
+fix()
+
+
+//
+
+let prom = new Promise((resolve, reject) => {
+    let condition = true
+    if(condition){
+        setTimeout(() => {resolve("Success in resolve")},3000) 
+    }
+    else{
+        setTimeout(() => {reject("failure in reject")},3000)
+    }
+})
+
+async function fix(msg){
+    try{
+        let response = await (prom)
+    console.log(response)
+    console.log(msg)
+    }
+    catch(err){
+        console.log(err)
+    }
+    
+    
+}
+
+fix("I knew it's real")

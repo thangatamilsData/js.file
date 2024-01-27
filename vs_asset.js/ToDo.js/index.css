@@ -1,0 +1,227 @@
+.todo {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.todo h1 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.todo h3 {
+  font-size: 1.2em;
+  margin-top: 5px;
+  color: #555;
+}
+
+.todo p {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.btn1 {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn1:hover {
+  background-color: #c82333;
+}
+
+.pop_screen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pop {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.pop input,
+.pop textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.pop button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.pop button.btn3 {
+  background-color: #dc3545;
+}
+
+.click_to_popup {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.click_to_popup:hover {
+  background-color: #218838;
+}
+
+.alldelete {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #dc3545;
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.fav {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 7px;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.fav.clicked {
+  background-color: red;
+}
+
+.edit {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.edit:hover {
+  background-color: #0056b3;
+}
+
+.pop_screen2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pop2 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.pop2 input,
+.pop2 textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.pop2 input[type='text'],
+.pop2 textarea {
+  margin-bottom: 10px;
+}
+
+.pop2 input[type='text'],
+.pop2 input[type='text']:last-child,
+.pop2 textarea {
+  margin-bottom: 10px;
+}
+
+.pop2 button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.pop2 button.btn4 {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pop2 button.btn5 {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.pop2 button:hover {
+  opacity: 0.8;
+}
+
+.pop2 button.btn4:hover {
+  background-color: #0056b3;
+}
+
+.pop2 button.btn5:hover {
+  background-color: #c82333;
+}

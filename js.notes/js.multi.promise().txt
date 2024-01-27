@@ -1,0 +1,67 @@
+var prom = new Promise((resolve, reject) => {
+    var fruits = ['apple', 'orange', 'blueberry', 'banana']
+    var random = Math.floor(Math.random()*4)
+    var random_fruit = fruits[random]
+    
+    if (random_fruit === 'apple'){
+        console.log(random_fruit)
+        resolve()
+      
+    }
+    else if(random_fruit === 'orange'){
+        console.log(random_fruit)
+        resolve()
+    }
+    else if(random_fruit === 'blueberry'){
+        console.log(random_fruit)
+        resolve()
+    }
+    else{
+        console.log(random_fruit.toUpperCase())
+        reject()
+    }
+})
+
+prom.then(() => (console.log("apple is good for skin ")))
+.then(() => (console.log("orange is good in vitamin C")))
+.then(() => (console.log("blueberry is good the Eye's")))
+.catch(() => (console.log("banana is good for the bulk and high in carbohydrate")))
+
+
+//
+
+var prom_1 = new Promise((resolve, reject) => {
+    condition = false
+    
+    if (condition){
+        resolve("resolving the first one")
+    }
+    else{
+        reject("first one")
+    }
+})
+
+var prom_2 = new Promise((resolve, reject) => {
+    condition = false
+    if (condition){
+        resolve("resolving the second one")
+    }
+    else{
+        reject("what is going On bruh *><*")
+    }
+})
+
+
+var prom_3 = new Promise((resolve, reject) => {
+    condition = true
+    if (condition){
+        resolve("resolving the third one")
+    }
+    else {
+        reject()
+    }
+})
+
+Promise.race([prom_1,prom_2,prom_3])
+.then((para) => (console.log("then resolve is working", para)))
+.catch((para) => (console.log("catch reject is working", para)))

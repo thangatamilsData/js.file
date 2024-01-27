@@ -1,0 +1,25 @@
+var condit = [true, false]
+var random = Math.floor(Math.random()*2)
+var condition = condit[random]
+var fix = function prom(){
+    
+    return new Promise((resolve, reject) => {
+        
+        if (condition){
+            setTimeout( () => {resolve("resolve is working")},5000)
+            
+            
+        }
+        else{
+            let count = 0
+            var sett = setInterval( () => { count++; if (count ===5) {clearInterval(sett)} reject("reject is working")}, 1000)
+        }
+})
+    
+}
+
+//promise is a object representation of eventual success or failure of an Asynchronous operation and result value, it helps to prevent the call back hell. promise request will be  fullfilled(resolved) in the future wether its a success or failure
+    
+
+fix().then( (val) => console.log(val))
+.catch( (val) => console.log(val))

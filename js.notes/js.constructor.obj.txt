@@ -1,0 +1,24 @@
+class Fix{
+    constructor(n,a){
+        this.name = n
+        this.age = a
+    }
+    one(){
+        return this.name
+    }
+    
+}
+var obj = "You got this bruh ! :)"
+class Next extends Fix{
+    one(){
+        console.log(`(: ${obj}`)
+    }
+    two(){
+        console.log("my age is ",this.age)
+    }
+}
+
+var Nex = new Next("Thangatamil", 22)
+
+Nex.one()
+Nex.two()

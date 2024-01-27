@@ -1,0 +1,14 @@
+var Friends = ["Gunabro", "sudhakar", "vicky"]
+
+function reverseFriends(){
+    let rev = Friends.slice('').reverse()
+    
+    console.log(rev)
+    if (rev !== Friends){
+        console.log("Hi", rev[0]+",", rev[1], 'and', rev[2] )
+    }
+    else{
+        console.log("wrong")
+    }
+}
+reverseFriends()

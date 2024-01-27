@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav><h1>Take Notes</h1></nav>
+    <section class="main">
+      <button class="alldelete">Delete All</button>
+      <div class="todo">
+        <h1>Title</h1>
+        <h3>Sub Title</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+          necessitatibus! Veniam incidunt rem pariatur sunt aspernatur fugit
+          placeat labore ullam. Veritatis itaque iure molestiae ut libero quos
+          inventore quae eaque!
+        </p>
+        <button class="edit" onclick="edited(event)">Edit</button>
+        <button class="btn1" onclick="del(event)">delete</button>
+        <button class="fav" onclick="favorite(this)">
+          <i class="fa-regular fa-heart"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="pop_screen">
+      <div class="pop">
+        <input type="text" class="inp1" />
+        <input type="text" class="inp2" />
+        <textarea class="text"></textarea>
+        <button class="btn2">ADD</button>
+        <button class="btn3">CLOSE</button>
+      </div>
+    </section>
+
+    <!-- <section class="pop_screen2">
+      <div class="pop2">
+        <input type="text" class="inp3" />
+        <input type="text" class="inp4" />
+        <textarea class="text2"></textarea>
+        <button class="btn4">Change</button>
+        <button class="btn5">Close</button>
+      </div>
+    </section> -->
+
+    <button class="click_to_popup">ADD NOTE</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>

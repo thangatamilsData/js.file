@@ -1,0 +1,14 @@
+while (true){
+    var a = prompt('Enter the value :')
+    
+    var rev = a.split('').reverse().join('')
+    
+    if (rev === a){
+        console.log("it's palindrome")
+        
+    }
+    else{
+        console.log("it's not")
+    }
+    
+}

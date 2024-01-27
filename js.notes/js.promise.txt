@@ -1,0 +1,25 @@
+var prom = new Promise((resolve, reject) => {
+    let value = true
+    if (value){
+        resolve()
+    }
+    else{
+        reject()
+    }
+    })
+    
+prom.then(one).catch(two)
+
+// anonymous function that used for single usage  :)
+// prom.then(() => console.log("resolve done"))
+// .catch(() => console.log("reject Done"))
+
+function one(){
+    console.log("promise resolve done")
+}
+
+function two(){
+    console.log("promise reject done")
+}
+
+//don't for the curly bracet for promise condition

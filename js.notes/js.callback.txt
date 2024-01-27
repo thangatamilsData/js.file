@@ -1,0 +1,15 @@
+function first(name){
+    console.log("first cb", name)
+}
+function second(name){
+    first("thangam")
+    console.log("second cb", name)
+}
+
+function callback(cb){
+    return cb("tamil")
+}
+
+callback(second)
+
+//callback function : it's logic that allow to through the function as a parameter  

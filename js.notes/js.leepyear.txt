@@ -1,0 +1,14 @@
+//find leep year
+while (true){
+    var year = prompt("Enter the number :")
+    function leep(a){
+        if( a%4 === 0 && a%100 !==0 || a%400 ===0){
+            console.log('leep year')
+            }
+        else{
+            console.log("not leep year")
+            }
+}
+
+leep(year)
+}

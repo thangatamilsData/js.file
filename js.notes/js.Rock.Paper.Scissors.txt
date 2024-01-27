@@ -1,0 +1,40 @@
+guess_count =0
+c_count =0
+while(true){
+    var choice = ["rock", "paper", "scissors"]
+    var random = choice[Math.floor(Math.random()*3)]
+    var option = ['rock', 'paper', 'scissors']
+    var guess = prompt("Rock/Paper/Scissors or Quit :")
+    
+    
+        if (guess.toLowerCase() == ('stop')){
+            break
+        }
+        else if(!option.includes(guess.toLowerCase())){
+            continue
+        }
+        else if(guess === "rock" && random === "scissors"){
+            console.log("You won it !")
+            guess_count +=1
+        }
+        else if (guess === "paper" && random === "rock"){
+            console.log("you won it !")
+            guess_count +=1
+        }
+        else if (guess === "scissors" && random === "paper"){
+            console.log("you won it !")
+            guess_count +=1
+        }
+        else if (guess === random){
+            console.log("tie :)")
+        }
+        else{
+            console.log("computer won it")
+            c_count++
+           
+        }
+        console.log("computer pick :", random)
+}
+
+console.log("you won",guess_count, "times")
+console.log("computer won", c_count, 'times')

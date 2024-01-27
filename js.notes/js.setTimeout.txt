@@ -1,0 +1,5 @@
+var array = [1,2, 3, 565, 6, "error handling is properly working"]
+
+var arr = setTimeout(() => {array.map((val) => console.log(val))},5000)
+
+//setTimeout(()=> {console.log(arr) },5000)

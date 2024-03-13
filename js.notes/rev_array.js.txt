@@ -1,0 +1,9 @@
+var arr = ['tamil', 'Thangame', 'A']
+
+let rev = arr.slice('').reverse('')
+
+if (arr === rev) {
+  console.log('Not :(')
+} else {
+  console.log(rev[0], rev[1] + rev[2])
+}

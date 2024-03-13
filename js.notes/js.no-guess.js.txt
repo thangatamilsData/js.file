@@ -1,0 +1,36 @@
+var a = prompt("Enter the number :")
+
+if(!isNaN(a) && a > 0){
+    a = parseInt(a)
+}else{
+    console.log("Please Enter the valid number")
+    return
+}
+
+random = Math.floor(Math.random()*a)
+
+var count = 0
+while(true){
+    count +=1
+    
+    let guess = prompt("Make a guess :")
+    if(!isNaN(guess) && guess > 0){
+        guess = parseInt(guess)
+    }else{
+        console.log("Enter the valid number")
+        continue
+    }
+    
+    if(random === guess){
+        console.log("Crt! :)")
+        break
+    }else if(guess > random){
+        console.log("Your above the guess")
+        continue
+    }else{
+        console.log("Your below the guess")
+        continue
+    }
+    
+}
+console.log("you guess it at", count, "guesses")

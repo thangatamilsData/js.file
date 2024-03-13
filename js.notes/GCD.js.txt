@@ -1,0 +1,14 @@
+//GCD
+
+function GCD(a, b){
+    while(b){
+        temp = b
+        b = a%b
+        a = temp
+    }
+    return a
+}
+let a = prompt("Enter the value :")
+let b = prompt("Enter the value :")
+
+console.log("the greatest common divisior", a, "and", b, "is", GCD(a, b))

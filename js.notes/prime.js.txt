@@ -1,0 +1,17 @@
+function is_prime(n) {
+  if (n < 2) {
+    return true
+  }
+  for (i = 2; i <= parseInt(n ** 0.5) + 1; i++) {
+    if (n % i === 0) {
+      return false
+    }
+  }
+  return true
+}
+
+for (val = 1; val <= 20; val++) {
+  if (is_prime(val)) {
+    console.log(val)
+  }
+}

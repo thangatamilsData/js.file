@@ -1,0 +1,16 @@
+while(true){
+    var a = prompt('Enter the value :')
+    
+    if(a === 'q'){
+        return
+    }
+
+let rev = a.split('').reverse('').join('')
+
+if (a === rev) {
+  console.log('Palindrome!')
+} else {
+  console.log('Not :(')
+}
+
+}
